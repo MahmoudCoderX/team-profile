@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="dark-theme">
+    <!-- Space Animation -->
+    <div class="space-container">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="planet"></div>
+        <div class="planet"></div>
+        <div class="planet"></div>
+        <div class="meteor"></div>
+        <div class="meteor"></div>
+        <div class="meteor"></div>
+        <div class="meteor"></div>
+        <!-- Geometric Shapes -->
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape shape-square"></div>
+        <div class="shape shape-circle"></div>
+        <div class="shape shape-triangle"></div>
+    </div>
+
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1 class="site-title">
+                    <i class="fas fa-users"></i>
+                    Team Profile
+                </h1>
+                <p class="site-subtitle">Public Policy Information Systems</p>
+            </div>
+            <div class="header-controls">
+                <div class="nav-buttons">
+                    <button class="nav-btn active" data-page="home">
+                        <i class="fas fa-home"></i>
+                        Home
+                    </button>
+                    <a href="about.html" class="nav-btn">
+                        <i class="fas fa-info-circle"></i>
+                        About Us
+                    </a>
+                </div>
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="searchInput" placeholder="Search by name or username..."
+                        class="search-input">
+                </div>
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <!-- Home Section -->
+            <div class="content-section active" id="homeSection">
+                <div class="team-grid" id="teamGrid">
+                    <!-- Mahmoud -->
+                    <div class="team-card" onclick="window.location.href='mahmoud.html'">
+                        <div class="card-header">
+                            <div class="avatar">
+                                <img src="images/mahmoud.jpg" alt="Mahmoud" class="profile-image"
+                                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <div class="avatar-fallback">M</div>
+                            </div>
+                            <div class="member-info">
+                                <h3 class="member-name">Mahmoud</h3>
+                                <div class="member-username">@mahmoud</div>
+                                <p class="member-bio">Public Policy Information Systems | Team Leader | Cybersecurity |
+                                    Data Analyst</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="card-details">
+                            <div class="detail-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span class="detail-text">20-7-2005</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span class="detail-text">Sohag, Egypt</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-globe"></i>
+                                <!-- <a href="https://mahmoud" target="_blank" class="detail-link">https://mahmoud</a> -->
+                            </div>
+                            <div class="detail-item">
+                                <i class="fab fa-linkedin"></i>
+                                <a href="https://www.linkedin.com/in/mahmoud-m-sayed2" target="_blank"
+                                    class="detail-link">LinkedIn Profile</a>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fab fa-instagram"></i>
+                                <a href="https://www.instagram.com/bondok_248/?__pwa=1" target="_blank"
+                                    class="detail-link">@bondok_248</a>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fab fa-facebook"></i>
+                                <a href="https://www.facebook.com/bondok.7x/" target="_blank"
+                                    class="detail-link">Facebook Page</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Alaa -->
+                    <div class="team-card" onclick="window.location.href='alaa.html'">
+                        <div class="card-header">
+                            <div class="avatar">
+                                <img src="images/alaa.jpg" alt="Alaa" class="profile-image"
+                                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <div class="avatar-fallback">A</div>
+                            </div>
+                            <div class="member-info">
+                                <h3 class="member-name">Alaa</h3>
+                                <div class="member-username">@alaa</div>
+                                <p class="member-bio">Public Policy Information Systems | Frontend Developer</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="card-details">
+                            <div class="detail-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span class="detail-text">21-3-2006</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span class="detail-text">Assiut, Egypt</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-globe"></i>
+                                <!-- <a href="https://alaa.com" target="_blank" class="detail-link">https://alaa.com</a> -->
+                            </div>
+                            <div class="detail-item">
+                                <i class="fab fa-linkedin"></i>
+                                <a href="https://www.linkedin.com/in/alaa-kamel-0aab22374" target="_blank"
+                                    class="detail-link">LinkedIn Profile</a>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fab fa-instagram"></i>
+                                <a href="https://www.instagram.com/alaa_fares0?igsh=MXIxbGg2M3R1OHV4eg%3D%3D&utm_source=qr"
+                                    target="_blank" class="detail-link">@alaa_fares0</a>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fab fa-facebook"></i>
+                                <a href="https://www.facebook.com/share/1CJ5AkRLKu/?mibextid=wwXIfr" target="_blank"
+                                    class="detail-link">Facebook Page</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Abdallah -->
+                    <div class="team-card" onclick="window.location.href='abdallah.html'">
+                        <div class="card-header">
+                            <div class="avatar">
+                                <img src="images/abdallah.jpg" alt="Abdallah" class="profile-image"
+                                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <div class="avatar-fallback">A</div>
+                            </div>
+                            <div class="member-info">
+                                <h3 class="member-name">Abdallah</h3>
+                                <div class="member-username">@abdallah</div>
+                                <p class="member-bio">Public Policy Information Systems | Data Analyst</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="card-details">
+                            <div class="detail-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span class="detail-text">21-5-2006</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span class="detail-text">Assiut, Egypt</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-globe"></i>
+                                <!-- <a href="https://abdallahdata" target="_blank" class="detail-link">https://abdallahdata</a> -->
+                            </div>
+                            <div class="detail-item">
+                                <i class="fab fa-linkedin"></i>
+                                <a href="https://www.linkedin.com/in/abdallah-mohmed/" target="_blank"
+                                    class="detail-link">LinkedIn Profile</a>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fab fa-instagram"></i>
+                                <a href="https://www.instagram.com/abdallh_mo9?igsh=MTh1Zm9uNXRzZm82bw=="
+                                    target="_blank" class="detail-link">@abdallh_mo9</a>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fab fa-facebook"></i>
+                                <a href="https://www.facebook.com/share/16ygaFe9Hh/" target="_blank"
+                                    class="detail-link">Facebook Page</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Amr -->
+                    <div class="team-card" onclick="window.location.href='amr.html'">
+                        <div class="card-header">
+                            <div class="avatar">
+                                <img src="images/amr.jpg" alt="Amr" class="profile-image"
+                                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <div class="avatar-fallback">A</div>
+                            </div>
+                            <div class="member-info">
+                                <h3 class="member-name">Amr</h3>
+                                <div class="member-username">@amr</div>
+                                <p class="member-bio">Public Policy Information Systems | Data Analyst</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="card-details">
+                            <div class="detail-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span class="detail-text">21-7-2006</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span class="detail-text">Minya, Egypt</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-globe"></i>
+                                <!-- <a href="https://amr.com" target="_blank" class="detail-link">https://amr.com</a> -->
+                            </div>
+                            <div class="detail-item">
+                                <i class="fab fa-linkedin"></i>
+                                <a href="https://www.linkedin.com/in/amr-saber-7b9b0a364?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                    target="_blank" class="detail-link">LinkedIn Profile</a>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fab fa-instagram"></i>
+                                <a href="https://www.instagram.com/3mr_s3ber?igsh=cWJzN2FrZjBrcTVy" target="_blank"
+                                    class="detail-link">@3mr_s3ber</a>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fab fa-facebook"></i>
+                                <a href="https://www.facebook.com/share/1B7qvfnp2U/" target="_blank"
+                                    class="detail-link">Facebook Page</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 Team Profile. Developed as part of the Public Policy Information Systems Program.</p>
+        </footer>
+
+        <!-- Back to Top Button -->
+        <button id="backToTop" class="back-to-top" title="Back to Top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
